@@ -1,0 +1,124 @@
+body {
+    font-family: sans-serif;
+
+    display: flex;
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: 12px;
+}
+
+header {
+    border-bottom: 4px solid hsl(220, 70%, 50%);
+}
+
+.vstack {
+    display: flex;
+    flex-direction: column;
+}
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.basis {
+    flex-basis: 100%;
+}
+
+.gap {
+    gap: 18px;
+}
+
+a {
+    color: hsl(220, 70%, 50%);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
+}
+a:visited {
+    color: hsl(220, 70%, 50%);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid hsl(45deg, 60%, 40%);
+}
+
+th:first-child, td:first-child {
+    padding-left: 12px;
+}
+
+th:last-child, td:last-child {
+    padding-right: 12px;
+}
+
+table > thead {
+    color: white;
+    text-align: left;
+    background-color: hsl(45deg, 60%, 40%);
+}
+
+table > thead > tr > th {
+    cursor: pointer;
+}
+
+table > tbody > tr:nth-child(even) {
+    background-color: hsl(45deg, 20%, 80%);
+}
+
+table > tbody > tr:nth-child(odd) {
+    background-color: hsl(45deg, 20%, 100%);
+}
+
+#notifications > div {
+    color: white;
+    padding-block: 4px;
+    padding-inline: 16px;
+}
+
+
+
+button {
+    font-weight: bold;
+    color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.notification.log, .btn.log     { background-color: hsl(0deg   0%  60%); }
+.btn.btn-log:hover              { background-color: hsl(0deg   0%  80%); }
+.btn.btn-log:active             { background-color: hsl(0deg   0%  40%); }
+
+.notification.info, .btn.info   { background-color: hsl(215deg 90% 60%); }
+.btn.btn-info:hover             { background-color: hsl(215deg 90% 80%); }
+.btn.btn-info:active            { background-color: hsl(215deg 90% 40%); }
+
+.notification.warn, .btn.warn   { background-color: hsl(45deg  90% 60%); }
+.btn.btn-warn:hover             { background-color: hsl(45deg  90% 80%); }
+.btn.btn-warn:active            { background-color: hsl(45deg  90% 40%); }
+
+.notification.error, .btn.error { background-color: hsl(10deg  90% 60%); }
+.btn.btn-error:hover            { background-color: hsl(10deg  90% 80%); }
+.btn.btn-error:active           { background-color: hsl(10deg  90% 40%); }
+
+.notification.debug, .btn.debug { background-color: hsl(255deg 90% 60%); }
+.btn.btn-debug:hover            { background-color: hsl(255deg 90% 80%); }
+.btn.btn-debug:active           { background-color: hsl(255deg 90% 40%); }
